@@ -4,35 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Control de inventarios</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
-    <h1>Control de Inventarios</h1>
+  
 <!-- Formulario-->
- <form >
- <div>
+<h1>Control de inventarios</h1>
+ <div class="formulario">
+    
+  <form  id="eventformulario"    class="formu">
 
-  <label> Nombre </label>
- <input type="text" placeholder="" id=" Nombre"  >
- <br>    
- <br>    
- 
-   <label> Cantidad </label>
- <input type="number" placeholder="" id="Cantiadd" > 
- <br>    
- <br>    
- 
-     <label> Precio </label>
- <input type="text" placeholder="" id= "Precio" required autofocus>
- <br>   
- <br> 
- <input id="btnIngresar" type="button" value="Agregar">
+    <label for="eventnombre"> Nombre </label>
+   <input   id=" eventnombre" name="eventnombre" type="text" >
+   <br>    
+   <br>    
+   
+     <label for="eventcantidad"> Cantidad </label>
+   <input id="eventcantidad" name="eventcantidad" type="number"  > 
+   <br>    
+   <br>    
+   
+       <label  for="eventprecio"> Precio </label>
+   <input id="eventprecio"  name="eventprecio"   type="text"  >
+   <br>   
+   <br> 
+   <input id="btnIngresar" type="button" value="Agregar">
+  
+  
+   </form>
 
  </div>
+ 
+<!-- Tabla de contenidos donde va a ir la cantidad el nombre del producto y el precio-->
 
+<div class="tabla">
+ <table>
+    <tr>
+  <th class="th">
+    Nombre 
+  </th>
+  <th class="th">
+    Cantidad
+  </th>
+  <th class="th">
+    Producto
+  </th>
+    </tr>
+    <tr>
+  <td> Azucar</td>
+  <td> 5</td>
+  <td>nose jj</td>
 
+    </tr>
 
- </form>
+ </table>
 
+</div>
 
 
 

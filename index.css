@@ -1,0 +1,33 @@
+h1{
+    text-align: center;
+}
+
+.formulario{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+   table{
+    margin: 0px auto;
+   }
+
+ .formu{
+    border-radius: 50px;
+    background-color: aqua;
+    margin: 0px auto;
+    padding: 40px 40px;
+   
+}
+
+
+td{
+    border: solid red 1px;
+    padding: 10px;
+    
+}
+.th{
+    border: solid red 1px;
+    padding: 10px;
+}
