@@ -12,23 +12,32 @@
 <h1>Control de inventarios</h1>
  <div class="formulario">
     
-  <form  id="eventformulario"    class="formu">
+  <form  id="eventoformulario"    class="formu">
 
-    <label for="eventnombre"> Nombre </label>
-   <input   id=" eventnombre" name="eventnombre" type="text" >
+   
+    <label > Nombre 
+        <input   id="name" name="eventnombre" type="text" >
+    </label>
+  
+   <br>    
+   <br>    
+    
+        <label> Cantidad 
+            <input id="eventcantidad" name="eventcantidad" type="number"  > 
+        </label>
+   
    <br>    
    <br>    
    
-     <label for="eventcantidad"> Cantidad </label>
-   <input id="eventcantidad" name="eventcantidad" type="number"  > 
-   <br>    
-   <br>    
-   
-       <label  for="eventprecio"> Precio </label>
-   <input id="eventprecio"  name="eventprecio"   type="text"  >
+        <label > Precio 
+            <input id="eventprecio"  name="eventprecio"     >
+        </label>
+        
+
+       
    <br>   
    <br> 
-   <input id="btnIngresar" type="button" value="Agregar">
+   <input id="btnagregar" type="submit" value="Agregar">
   
   
    </form>
@@ -38,7 +47,7 @@
 <!-- Tabla de contenidos donde va a ir la cantidad el nombre del producto y el precio-->
 
 <div class="tabla">
- <table>
+ <table id="tablainventarios">
     <tr>
   <th class="th">
     Nombre 
@@ -47,13 +56,11 @@
     Cantidad
   </th>
   <th class="th">
-    Producto
+    Precio
   </th>
     </tr>
     <tr>
-  <td> Azucar</td>
-  <td> 5</td>
-  <td>nose jj</td>
+ 
 
     </tr>
 
@@ -67,6 +74,6 @@
 
 
 
-
+<script src="./index.js"></script>
 </body>
 </html>
