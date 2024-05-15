@@ -4,7 +4,7 @@ const Precio = document.getElementById("eventprecio");
 const formulario = document.getElementById("eventoformulario");
 const btnAgregar = document.getElementById("btnagregar");
 
-let datosLocalStorage = JSON.parse(localStorage.getItem("formulario"))|| []
+let datosLocalStorage = JSON.parse(localStorage.getItem("formulario"));
 // Agregar un evento al formulario para guardar los datos en localStorage cuando se envíe//
 function guardarprodu() {
 
@@ -15,7 +15,7 @@ function guardarprodu() {
     }
     datosLocalStorage.push (datosproducto)
 
-    localStorage.setItem("formulario",JSON.stringify(datosLocalStorage))
+    
 }
    //aqui se guardan losdatos en localstorage//
     localStorage.setItem("formulario", datosLocalStorage);
